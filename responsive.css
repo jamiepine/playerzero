@@ -1,0 +1,79 @@
+/* ####### responsive layout CSS ####### */
+
+@media (max-width: 600px) {
+	#sidebar {
+    	width: 300px;
+    }
+    body, #contentwrapper, #contentcolumn, .innertube {
+	    overflow-x: hidden;
+    }
+    h1 {
+	font-size: 11px;
+	margin-top: 15px;
+	}
+    #sidebar.navClosed { margin-left: -300px; }
+	#contentcolumn.navClosed, #pageHeader.navClosed { margin-left: 0px; }
+
+	#sidebar.navOpen { margin-left: 0px; }
+	#contentcolumn.navOpen, #pageHeader.navOpen { margin-left: 300px; }
+	
+	#versionnotes {
+    padding: 0px 10px;
+    font-size: 11px;
+    min-width: 300px;
+   } 
+}
+
+
+
+
+/* ####### MASONARY ####### */
+
+@media only screen and (min-width: 400px) {
+    .masonry {
+        -moz-column-count: 2;
+        -webkit-column-count: 2;
+        column-count: 2;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    .masonry {
+        -moz-column-count: 5;
+        -webkit-column-count: 5;
+        column-count: 5;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .masonry {
+        -moz-column-count: 4;
+        -webkit-column-count: 4;
+        column-count: 4;
+    }
+}
+
+@media only screen and (min-width: 1100px) {
+    .masonry {
+        -moz-column-count: 9;
+        -webkit-column-count: 9;
+        column-count: 9;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .wrapper {
+        width: 1260px;
+    }
+}
+
+
+
+
+
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .mobileNav {padding-top: 15px;}
+    .mobileNav a {font-size: 18px;}
+}
